@@ -7,7 +7,7 @@
     <style>
         body { 
             font-family: Arial, sans-serif; 
-            max-width: 600px; 
+            max-width: 800px; /* Wider for 3-column row */
             margin: 40px auto; 
             padding: 20px; 
             text-align: center; 
@@ -16,8 +16,8 @@
         h1 { color: #333; }
         .qr-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* Two equal columns */
-            gap: 50px 60px; /* 30px vertical gap (rows), 20px horizontal (columns) */
+            grid-template-columns: 1fr 1fr 1fr; /* Three equal columns for single row */
+            gap: 20px; /* Even spacing around all */
             margin: 20px 0;
         }
         .qr-section { 
@@ -27,11 +27,31 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
         }
         img { 
-            width: 250px; /* Fixed width to match your uploads */
+            width: 250px; /* Your preferred size */
             height: auto; 
-            max-width: 100%; /* Responsive fallback for small screens */
+            max-width: 100%; /* Responsive on mobile */
             border: 1px solid #ddd; 
             border-radius: 4px; 
+        }
+        .kofi-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .kofi-button {
+            display: inline-block;
+            background: #29abe0; /* Ko-fi blue */
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .kofi-button:hover {
+            background: #1e88c7;
         }
         .back-link { margin-top: 30px; }
         a { color: #1a73e8; text-decoration: none; }
@@ -43,30 +63,40 @@
             border-radius: 5px; 
             margin: 10px; 
         }
+        /* Mobile: Stack QRs vertically */
+        @media (max-width: 768px) {
+            .qr-grid {
+                grid-template-columns: 1fr; /* Single column on small screens */
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Tip Me to Fuel More Creations! 🚀</h1>
-    <p>Thanks for checking out my repos. Scan a QR below to send crypto—every bit helps with new mods and tools.</p>
+    <p>Thanks for checking out my repos. Scan a QR below for quick crypto tips (BTC Lightning, USDT, SOL), or use Ko-fi for cards.</p>
     
     <div class="qr-grid">
         <div class="qr-section">
-            <img src="BTC-QR-TRUST.jpg" alt="BTC QR Code">
+            <img src="BTC-Lightning-QR.jpg" alt="BTC Lightning QR Code">
         </div>
         
         <div class="qr-section">
-            <img src="ETH-QR-TRUST.jpg" alt="ETH QR Code">
+            <img src="USDT-QR.jpg" alt="USDT QR Code">
         </div>
         
         <div class="qr-section">
-            <img src="SOL-QR-TRUST.jpg" alt="SOL QR Code">
-        </div>
-        
-        <div class="qr-section">
-            <img src="USDC-QR-TRUST.jpg" alt="USDC QR Code">
+            <img src="SOL-QR.jpg" alt="SOL QR Code">
         </div>
     </div>
     
-    <p class="back-link"><a href="https://github.com/rusty-gere" class="button">← Back to Repos</a></p>
+    <div class="kofi-section">
+        <h3>Or Tip via Credit Card</h3>
+        <a href="https://ko-fi.com/rustygere" class="kofi-button" target="_blank">
+            Buy Me a Coffee on Ko-fi ☕
+        </a>
+        <p><small>Supports one-time or monthly tips—no account needed!</small></p>
+    </div>
+    
+    <p class="back-link"><a href="https://github.com/Rusty-Gere" class="button">← Back to Repos</a></p>
 </body>
 </html>
