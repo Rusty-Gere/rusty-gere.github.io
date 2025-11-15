@@ -1,13 +1,13 @@
 # Welcome to Rusty-Gere's File Repository
 
 ## Summary
-This is my personal hub for sharing downloadable files, mostly zip archives of custom game mods, tools, and resources. Browse my repositories below for free downloads—fork, star, or contribute if something sparks your interest!
+This is my personal hub for sharing my work for all to enjoy.
 
-(Current repos: Aliens Fireteam Elite custom profiles and more to come.)
+I do this for free, but please consider a donation if you enjoy my work. That way I can justify spending more time on this, and buy my wife stuff so she lets me work in peace. :)
 
 <details><summary><b>💰 Tip Me</b></summary>
 
-[Click for Crypto Options](https://rusty-gere.github.io/)
+[Click for Donation Options](https://rusty-gere.github.io/)
 
 </details>
 
